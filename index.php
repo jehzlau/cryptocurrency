@@ -41,6 +41,9 @@ clear: both;
 <?php
 $api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,XRP,DASH,XMR,ZEC,DOGE,ETC&tsyms=PHP';
 
+$cryptocurrency = file_get_contents($api_url);
+
+
 ?>
 
 <div class="bottom-text">
