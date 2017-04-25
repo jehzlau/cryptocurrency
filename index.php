@@ -43,6 +43,9 @@ $api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,
 $cryptocurrency = file_get_contents($api_url);
 $json=json_decode($cryptocurrency,true);
  
+foreach($json as $cc => $value) {
+   echo '<div class="ccrow"><div class="col-xs-6 ccx"><span>'. $cc.'</span></div><div class="col-xs-6 cct"><span>'. $value['PHP'] .'</span></div></div>';
+}
 
 
 ?>
