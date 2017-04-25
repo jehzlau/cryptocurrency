@@ -30,6 +30,7 @@ padding-top: 10px;
 font-style: italic;
 clear: both;
 }
+
 </style>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
@@ -51,7 +52,9 @@ foreach($json as $cc => $value) {
 ?>
 
 <div class="bottom-text">
-<h6>This page will refresh every 30 seconds. This website is made possible with <a target="_blank" href="https://www.cryptocompare.com/api/">CryptoCompare's free API</a>. Without their free API, this website will not exist. I will add more cryptos in the list if I think it's worthy to be added. Made from scratch with love in the Philippines, by <a target="_blank" href="http://www.jehzlau.com/">Jehzeel Laurente</a></h6>
+<h6>Prices will update every 30 seconds. This website is made possible by the powerful and awesome<a 
+target="_blank" 
+href="https://www.cryptocompare.com/api/">CryptoCompare free API</a>. Without their free API, this website will not exist. I will add more cryptos in the list if I think it's worthy to be added. Made from scratch with love in the Philippines, by <a target="_blank" href="http://www.jehzlau.com/">Jehzeel Laurente</a></h6>
 </div>
 </div>
 </body>
