@@ -38,6 +38,11 @@ clear: both;
 <h1>Real-Time Crypto Currency Exchange Rates in Philippine Pesos</h1>
 <h3>A really simple web app that displays crypto currencies that matter.</h3>
 
+<?php
+$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,XRP,DASH,XMR,ZEC,DOGE,ETC&tsyms=PHP';
+
+?>
+
 <div class="bottom-text">
 <h6>This page will refresh every 30 seconds. This website is made possible with <a target="_blank" href="https://www.cryptocompare.com/api/">CryptoCompare's free API</a>. Without their free API, this website will not exist. I will add more cryptos in the list if I think it's worthy to be added. Made from scratch with love in the Philippines, by <a target="_blank" href="http://www.jehzlau.com/">Jehzeel Laurente</a></h6>
 </div>
