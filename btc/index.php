@@ -36,16 +36,16 @@ clear: both;
 </head>
 <body>
 <div class="container">
-<h1>Real-Time Crypto Currency Exchange Rates in Philippine Pesos</h1>
-<h3>A really simple web app that displays crypto currencies that matter. <a href="https://www.cryptocurrency.ph/btc/">View exchange rates in BTC</a>.</h3>
+<h1>Real-Time Crypto Currency Exchange Rates in BTC</h1>
+<h3>A really simple web app that displays crypto currencies that matter. <a href="https://www.cryptocurrency.ph/">Back to Philippine Pesos</a>.</h3>
 
 <?php
-$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=XLM,XRP,BTC,ETH,LTC,DASH,XMR,ZEC,DOGE,ETC&tsyms=PHP';
+$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=XLM,XRP,ETH,LTC,DASH,XMR,ZEC,DOGE,ETC&tsyms=BTC';
 $cryptocurrency = file_get_contents($api_url);
 $json=json_decode($cryptocurrency,true);
  
 foreach($json as $cc => $value) {
-   echo '<div class="ccrow"><div class="col-xs-6 ccx"><span>'. $cc.'</span></div><div class="col-xs-6 cct"><span>'. $value['PHP'] .'</span></div></div>';
+   echo '<div class="ccrow"><div class="col-xs-6 ccx"><span>'. $cc.'</span></div><div class="col-xs-6 cct"><span>'. $value['BTC'] .'</span></div></div>';
 }
 
 
