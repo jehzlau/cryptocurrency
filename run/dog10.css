@@ -1,0 +1,352 @@
+.dogstick_holder
+{
+    position: absolute;
+    height: 400px;
+    width: 200px;
+    margin: auto;
+    top: 55%;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    z-index: 1;
+}
+
+
+.dogstick_holder .cryptovalue {
+text-align: center;
+    font-family: Arial;
+    font-size: large;
+    position: relative;
+        top: 150px;
+    font-size: small;
+    right: 25px;
+}
+
+.dogstick_holder.stickcontainer {
+transform: scale(0.9) !important;
+}
+
+.dog
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	height: 100%;
+	width: 100%;
+}
+.dogstick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 100px;
+    right: 0;
+    margin: auto;
+    top: 110px;
+	border-radius: 50%;
+	transform: rotate(10deg);
+	transform-origin: bottom left;
+	background: url(https://www.cryptocompare.com/media/19684/doge.png);
+	background-size: contain;
+}
+.dogstick_body
+{
+	position: absolute;
+    width: 50px;
+    height: 150px;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    transform: rotate(90deg);
+    top: 100px;
+    border-radius: 60px;
+}
+.dogstick_hands
+{
+	position: absolute;
+	width: 20px;
+	height: 200px;
+	left: -42px;
+	right:0;
+	margin:auto;
+	transform: rotate(85deg);
+    top: 73px;
+}
+.dogstick_hands div
+{
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: 80px;
+	transform-origin: top center;
+	border-radius: 10px;
+}
+.doghand1
+{
+	transform: rotate(-40deg);
+}
+.dogleg2
+{
+	top: 70px;
+	transform: rotate(-145deg);
+}
+.doghand1, .dogleg2, .dogstick_head, .dogleg1, .leg2, .leg3, .tail, .ears, .ears2
+{
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.doghand1
+{
+	animation-name: doghand1_dogrotate;
+}
+.dogleg2
+{
+	animation-name: dogleg2_dogrotate;
+}
+.dogstick_head
+{
+	animation-name: head_dogrotate;
+}
+
+.ears, .ears2 {
+	animation-name: ears_dogrotate;
+}
+
+.part_2 div
+{
+	animation-direction: alternate-reverse;
+}
+
+.dogstick_legs
+{
+	position: absolute;
+	width: 20px;
+	height: 200px;
+	left: -100px;
+	right:0;
+	margin:auto;
+    top: 170px;
+	transform-origin: top center;
+    transform: rotate(40deg);
+}
+.dogstick_legs div
+{
+	position: absolute;
+	left:0;
+	transform-origin: top center;
+	border-radius: 10px;
+}
+.dogleg1
+{
+	height: 85px;
+	width: 100%;
+}
+
+.tail {
+	animation-name: dogtale_dogrotate;
+}
+
+.dogleg1
+{
+	transform: rotate(-40deg);
+	animation-name: dogleg1_dogrotate;
+}
+
+@keyframes doghand1_dogrotate
+{
+	0%
+	{
+		transform: rotate(-40deg);
+	}
+	100%
+	{
+		transform: rotate(40deg);
+	}
+}
+@keyframes dogleg2_dogrotate
+{
+	0%
+	{
+		transform: rotate(-145deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+
+@keyframes ears_dogrotate
+{
+	0%
+	{
+		transform: rotate(13deg);
+	}
+	100%
+	{
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes head_dogrotate
+{
+	0%
+	{
+		transform: rotate(13deg);
+	}
+	100%
+	{
+		transform: rotate(17deg);
+	}
+}
+
+@keyframes dogtale_dogrotate
+{
+	0%
+	{
+		transform: rotate(-25deg);
+	}
+	50%
+	{
+		transform: rotate(-35deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+
+@keyframes dogleg1_dogrotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+@keyframes leg2_dogrotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(60deg);
+	}
+}
+@keyframes leg3_dogrotate
+{
+	0%
+	{
+		transform: rotate(-30deg);
+	}
+	100%
+	{
+		transform: rotate(65deg);
+	}
+}
+
+.ears, .ears2 {
+	animation-duration: 0.09s;
+}
+
+.tail {
+	animation-duration: 0.01s;
+}
+
+.doghand1, .dogleg2, .dogstick_head, .dogleg1
+{
+	animation-duration: 0.3s;
+}
+
+.dog
+{
+    transform: scale(0.6);
+}
+.dogstick_head
+{
+    background-color: #7d796d;
+}
+.dogstick_body
+{
+	background-color: #7d796d;
+}
+.dogstick_hands.part_1 *
+{
+    background-color: black;
+}
+.dogstick_hands.part_2 *
+{
+    background-color: black;
+}
+.dogleg1, .tail
+{
+	background-color: black;
+}
+
+
+.tail {
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    left: 0;
+    right: 165px;
+    margin: auto;
+    transform: rotate(85deg);
+    border-radius: 10px;
+    top: 130px;
+}
+
+.ears {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid black;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    z-index: -1;
+}
+
+.ears2 {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid black;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 160px;
+    top: 110px;
+    z-index: -1;
+}
+
+.ears2-inner {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #decc81;
+    position: relative;
+    left: -15px;
+    top: 10px;
+    z-index: -1;
+}
+
+.ears-inner {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #decc81;
+    position: relative;
+    left: -15px;
+    top: 10px;
+    z-index: -1;
+}

@@ -1,0 +1,509 @@
+html,body
+{
+	padding:0;
+	margin:0;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.footer li {display: inline-block; list-style-type: none; padding: 5px 10px;}
+.footer li:nth-child(1){background:green;}
+.footer li:nth-child(2){background:red;}
+.footer li:nth-child(3){background:blue;}
+.footer li:hover{background: black;}
+.footer li a{color: #fff; text-decoration: none; font-size: large;}
+
+.footer {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-size: x-small;
+}
+
+
+.human
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	height: 100%;
+	width: 100%;
+    transform: scale(1);
+}
+.stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: teal;
+	background-image: url(https://www.cryptocompare.com/media/19633/btc.png);
+	background-size: contain;
+	transform: rotate(10deg);
+	transform-origin: bottom left;
+}
+
+.stick_holder2 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: lightgray;
+	background-image: url(https://www.cryptocompare.com/media/20646/eth_logo.png);
+	background-size: contain;
+	transform: rotate(10deg);
+	transform-origin: bottom left;
+}
+
+.stick_holder3 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: white;
+	background-image: url(https://www.cryptocompare.com/media/19782/litecoin-logo.png);
+	background-size: contain;
+	transform: rotate(10deg);
+	transform-origin: bottom left;
+}
+
+.stick_holder4 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: lightblue;
+	background-image: url(https://www.cryptocompare.com/media/19972/ripple.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+.stick_holder5 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: lightblue;
+	background-image: url(https://www.cryptocompare.com/media/351360/zec.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: contain;
+}
+
+.stick_holder6 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: black;
+	background-image: url(images/iota.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.stick_holder7 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: white;
+	background-image: url(https://www.cryptocompare.com/media/19969/xmr.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: contain;
+}
+
+.stick_holder8 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: lightblue;
+	background-image: url(https://www.cryptocompare.com/media/20626/imageedit_27_4355944719.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: contain;
+}
+
+.stick_holder9 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: lightgreen;
+	background-image: url(https://www.cryptocompare.com/media/20275/etc2.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: contain;
+}
+
+.stick_holder10 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: white;
+	background-image: url(images/bch.png);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: contain;
+	border: 1px solid #f9b869;
+}
+
+.stick_holder11 .stick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+	border-radius: 50%;
+	background-color: black;
+	background-image: url(https://www.cryptocompare.com/media/1383858/neo.jpg);
+	transform: rotate(30deg);
+	transform-origin: bottom left;
+	background-size: contain;
+}
+
+
+.stick_body
+{
+	position: absolute;
+	width: 20px;
+	height: 150px;
+	background-color: black;
+	left: -20px;
+	right:0;
+	margin:auto;
+	transform: rotate(15deg);
+    top: 60px;
+	border-radius: 10px;
+}
+.stick_hands
+{
+	position: absolute;
+	width: 20px;
+	height: 200px;
+	left: -42px;
+	right:0;
+	margin:auto;
+	transform: rotate(15deg);
+    top: 80px;
+}
+.stick_hands div
+{
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: 80px;
+	transform-origin: top center;
+	border-radius: 10px;
+}
+.hand1
+{
+	transform: rotate(-40deg);
+	background-color: black;
+}
+.hand2
+{
+	top: 70px;
+	transform: rotate(-145deg);
+	background-color: black;
+}
+.part_2 *
+{
+	background-color: black;
+}
+
+.hand1, .hand2, .stick_head, .leg1, .leg2, .leg3
+{
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-duration: 0.3s;
+	animation-direction: alternate;
+}
+
+.stick_holder11 .hand1, .stick_holder11 .hand2, .stick_holder11 .stick_head, .stick_holder11 .leg1, .stick_holder11 .leg2, .stick_holder11 .leg3
+{
+	animation-duration: 0.39s;
+}
+
+.stick_holder10 .hand1, .stick_holder10 .hand2, .stick_holder10 .stick_head, .stick_holder10 .leg1, .stick_holder10 .leg2, .stick_holder10 .leg3
+{
+	animation-duration: 0.25s;
+}
+
+.stick_holder9 .hand1, .stick_holder9 .hand2, .stick_holder9 .stick_head, .stick_holder9 .leg1, .stick_holder9 .leg2, .stick_holder9 .leg3
+{
+	animation-duration: 0.6s;
+}
+
+.stick_holder8 .hand1, .stick_holder8 .hand2, .stick_holder8 .stick_head, .stick_holder8 .leg1, .stick_holder8 .leg2, .stick_holder8 .leg3
+{
+	animation-duration: 0.45s;
+}
+
+.stick_holder7 .hand1, .stick_holder7 .hand2, .stick_holder7 .stick_head, .stick_holder7 .leg1, .stick_holder7 .leg2, .stick_holder7 .leg3
+{
+	animation-duration: 0.5s;
+}
+
+.stick_holder6 .hand1, .stick_holder6 .hand2, .stick_holder6 .stick_head, .stick_holder6 .leg1, .stick_holder6 .leg2, .stick_holder6 .leg3
+{
+	animation-duration: 0.8s;
+}
+
+.stick_holder5 .hand1, .stick_holder5 .hand2, .stick_holder5 .stick_head, .stick_holder5 .leg1, .stick_holder5 .leg2, .stick_holder4 .leg3
+{
+	animation-duration: 0.4s;
+}
+
+.stick_holder4 .hand1, .stick_holder4 .hand2, .stick_holder4 .stick_head, .stick_holder4 .leg1, .stick_holder4 .leg2, .stick_holder4 .leg3
+{
+	animation-duration: 0.9s;
+}
+
+.stick_holder3 .hand1, .stick_holder3 .hand2, .stick_holder3 .stick_head, .stick_holder3 .leg1, .stick_holder3 .leg2, .stick_holder3 .leg3
+{
+	animation-duration: 0.7s;
+}
+
+.stick_holder2 .hand1, .stick_holder2 .hand2, .stick_holder2 .stick_head, .stick_holder2 .leg1, .stick_holder2 .leg2, .stick_holder2 .leg3
+{
+	animation-duration: 0.5s;
+}
+
+.part_2 div, .stick_holder4 .part_2 div,  .stick_holder3 .part_2 div , .stick_holder2 .part_2 div, .stick_holder5 .part_2 div
+{
+	animation-direction: alternate-reverse;
+}
+
+.hand1
+{
+	animation-name: hand1_rotate;
+}
+.hand2
+{
+	animation-name: hand2_rotate;
+}
+.stick_head
+{
+	animation-name: head_rotate;
+}
+
+
+.stick_legs
+{
+	position: absolute;
+	width: 20px;
+	height: 200px;
+	left: -50px;
+	right:0;
+	margin:auto;
+    top: 190px;
+	transform-origin: top center;
+    transform: rotate(-20deg);
+}
+.stick_legs div
+{
+	position: absolute;
+	left:0;
+	transform-origin: top center;
+	border-radius: 10px;
+}
+.leg1, .leg2
+{
+	height: 100px;
+	width: 100%;
+}
+.leg3
+{
+	width: 40px;
+	height: 20px;
+}
+.leg1
+{
+	transform: rotate(-40deg);
+	background-color: black;
+	animation-name: leg1_rotate;
+}
+.leg2
+{
+	transform: rotate(-145deg);
+	background-color: black;
+	top: 90px;
+	animation-name: leg2_rotate;
+}
+.leg3
+{
+	transform: rotate(15deg);
+	background-color: black;
+	top: 90px;
+	animation-name: leg3_rotate;
+}
+
+@keyframes hand1_rotate
+{
+	0%
+	{
+		transform: rotate(-40deg);
+	}
+	100%
+	{
+		transform: rotate(40deg);
+	}
+}
+@keyframes hand2_rotate
+{
+	0%
+	{
+		transform: rotate(-145deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+@keyframes head_rotate
+{
+	0%
+	{
+		transform: rotate(13deg);
+	}
+	100%
+	{
+		transform: rotate(17deg);
+	}
+}
+@keyframes leg1_rotate
+{
+	0%
+	{
+		transform: rotate(-15deg);
+	}
+	100%
+	{
+		transform: rotate(25deg);
+	}
+}
+@keyframes leg2_rotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(60deg);
+	}
+}
+@keyframes leg3_rotate
+{
+	0%
+	{
+		transform: rotate(-30deg);
+	}
+	100%
+	{
+		transform: rotate(65deg);
+	}
+}
+
+.cryptovalue {
+text-align: center;
+    font-family: Arial;
+    font-size: large;
+    position: relative;
+    top: -30px;
+    font-size: x-large;
+}
+
+.cryptovalue::before {
+    content: "\0020B1";
+}
+
+.themoon img {
+    width: 200px;
+}
+.themoon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tothemoon {
+    position: relative;
+    top: 120px;
+    z-index: 999;
+    font-family: Arial;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 1000px;
+    display: block;
+    color: rgb(120, 107, 107);
+}

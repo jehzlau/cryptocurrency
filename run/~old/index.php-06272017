@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<?php
+$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETC,XLM,DOGE,DASH,IOT,XMR,ETH,LTC,XRP,BTC,ZEC&tsyms=USD';
+$cryptocurrency = file_get_contents($api_url);
+$json=json_decode($cryptocurrency);
+
+$forex = 50.2;
+$BTC = $json->BTC->USD * $forex;
+$ETH = $json->ETH->USD * $forex;
+$DOGE = $json->DOGE->USD * $forex;
+$DASH = $json->DASH->USD * $forex;
+$IOT = $json->IOT->USD * $forex;
+$XMR = $json->XMR->USD * $forex;
+$LTC = $json->LTC->USD * $forex;
+$XRP = $json->XRP->USD * $forex;
+$ZEC = $json->ZEC->USD * $forex;
+$XLM = $json->XLM->USD * $forex;
+$ETC = $json->ETC->USD * $forex;
+?>
+
+<meta http-equiv="refresh" content="300">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CryptoCurrency.ph Race</title>
+  
+<style type="text/css">
+.stick_holder9{bottom:-21%; left:11%;}
+.stick_holder8{bottom:-10%;left:29%;}
+.stick_holder7{bottom:1%;left:23%;}
+.stick_holder6{bottom:1%;left:4%;}
+.stick_holder5{bottom:-15%;left:49.2%;}
+.stick_holder4{bottom:7%;left:0%;}
+.stick_holder3{bottom:13%;left:19.9%;}
+.stick_holder2{bottom: 1%;left:42%;}
+.stick_holder{bottom:10%; left:65%;}
+.stickcontainer, .stellar_rocket_holder {
+	transform: scale(0.5);
+	position: absolute;
+	height: 400px;
+	width:200px;
+	margin: auto;
+	top: 0;
+	right: auto;
+}
+
+.stellar_rocket_holder {
+	left: -2%;
+	top: -10%;
+}
+.the-rocket {
+	transform: rotate(55deg);
+	animation: move 5s ease-in-out infinite alternate;
+	position: absolute;
+}
+
+@keyframes move
+{
+  0% { top: 0; }
+  50% {top: 25px;}
+  100%   { top: 100px; }
+
+}
+.the-rocket .cryptovalue {
+    transform: rotate(-55deg);
+    left: -100px;
+    top: 100px;
+}
+  </style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="clouds.css">
+    <link rel="stylesheet" href="dog10.css">
+    <link rel="stylesheet" href="runners-moon6.css">
+
+</head>
+<body>
+<div class="themoon">
+<img src="moon.png">
+</div>
+
+<div id="clouds">
+	<div class="x4"><div class="tothemoon">To the moooooooon!</div></div>
+	<div class="cloud x1"></div>
+	<div class="cloud x2"></div>
+	<div class="cloud x3"></div>
+	<div class="cloud x4"></div>
+	<div class="cloud x5"></div>
+</div>
+
+
+<div class="stellar_rocket_holder">
+<div class="the-rocket">
+<div class="cryptovalue"><?php echo $XLM; ?></div>
+<img src="stellar.png">
+</div>
+</div>
+
+	<div class="dogstick_holder stickcontainer">
+		<div class="dog">
+			<div class="tail"></div>
+			<div class="dogstick_hands part_1">
+					<div class="dogleg2"></div>
+			</div>
+			<div class="dogstick_legs part_1">
+				<div class="dogleg1">
+				</div>
+			</div>
+			<div class="dogstick_body"></div>
+			<div class="dogstick_legs part_2">
+				<div class="dogleg1">
+				</div>
+			</div>
+			<div class="dogstick_hands part_2">
+					<div class="dogleg2"></div>
+			</div>
+			<div class="dogstick_head">
+			</div>
+			<div class="ears">
+				<div class="ears-inner"></div>
+			</div>
+			<div class="ears2">
+				<div class="ears2-inner"></div>
+			</div>
+		</div>
+		<div class="cryptovalue"><?php echo $DOGE; ?></div>
+	</div>
+
+	<div class="stick_holder stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $BTC; ?></div>
+	</div>
+
+	<div class="stick_holder2 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $ETH; ?></div>
+	</div>
+
+	<div class="stick_holder3 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $LTC; ?></div>
+	</div>
+
+		<div class="stick_holder4 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $XRP; ?></div>
+	</div>
+	
+		<div class="stick_holder5 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $ZEC; ?></div>
+	</div>
+
+		<div class="stick_holder6 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $IOT; ?></div>
+	</div>
+
+		<div class="stick_holder7 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $XMR; ?></div>
+	</div>
+	
+		<div class="stick_holder8 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $DASH; ?></div>
+	</div>
+	
+
+		<div class="stick_holder9 stickcontainer">
+		<div class="human">
+			<div class="stick_hands part_1">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_legs part_1">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_body"></div>
+			<div class="stick_legs part_2">
+				<div class="leg1">
+					<div class="leg2">
+						<div class="leg3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="stick_hands part_2">
+				<div class="hand1">
+					<div class="hand2"></div>
+				</div>
+			</div>
+			<div class="stick_head"></div>
+		</div>
+		<div class="cryptovalue"><?php echo $ETC; ?></div>
+	</div>	
+	
+
+<div class="footer">
+Made in the Philippines by <a target="_blank" href="https://www.jehzlau-concepts.com">jehzlau</a>. Data is freely provided by <a target="_blank" href="https://www.cryptocompare.com/api">CryptoCompare API</a>. Return to the <a target="_blank" href="https://www.cryptocurrency.ph">homepage</a>.
+</div>
+
+</body></html>

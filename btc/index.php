@@ -40,7 +40,7 @@ clear: both;
 <h3>A really simple web app that displays crypto currencies that matter. <a href="https://www.cryptocurrency.ph/">Back to Philippine Pesos</a>.</h3>
 
 <?php
-$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=XLM,XRP,ETH,LTC,DASH,XMR,ZEC,DOGE,ETC&tsyms=BTC';
+$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=IOT,BCH,NEO,DGB,STRAT,BAT,XEM,XLM,XRP,ETH,LTC,DASH,XMR,ZEC,DOGE,ETC&tsyms=BTC';
 $cryptocurrency = file_get_contents($api_url);
 $json=json_decode($cryptocurrency,true);
  

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>dogstick</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+html,body
+{
+	padding:0;
+	margin:0;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.dogstick_holder
+{
+	position: absolute;
+	height: 400px;
+	width:200px;
+	margin: auto;
+	top: 0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+.dog
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	height: 100%;
+	width: 100%;
+}
+.dogstick_head
+{
+	position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 100px;
+    right: 0;
+    margin: auto;
+    top: 110px;
+	border-radius: 50%;
+	transform: rotate(10deg);
+	transform-origin: bottom left;
+	background: url(https://www.cryptocompare.com/media/19684/doge.png);
+	background-size: contain;
+}
+.dogstick_body
+{
+	position: absolute;
+    width: 50px;
+    height: 150px;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    transform: rotate(90deg);
+    top: 100px;
+    border-radius: 60px;
+}
+.dogstick_hands
+{
+	position: absolute;
+	width: 20px;
+	height: 200px;
+	left: -42px;
+	right:0;
+	margin:auto;
+	transform: rotate(85deg);
+    top: 73px;
+}
+.dogstick_hands div
+{
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: 80px;
+	transform-origin: top center;
+	border-radius: 10px;
+}
+.doghand1
+{
+	transform: rotate(-40deg);
+}
+.dogleg2
+{
+	top: 70px;
+	transform: rotate(-145deg);
+}
+.doghand1, .dogleg2, .dogstick_head, .dogleg1, .leg2, .leg3, .tail, .ears, .ears2
+{
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.doghand1
+{
+	animation-name: doghand1_rotate;
+}
+.dogleg2
+{
+	animation-name: dogleg2_rotate;
+}
+.dogstick_head
+{
+	animation-name: head_rotate;
+}
+
+.ears, .ears2 {
+	animation-name: ears_rotate;
+}
+
+.part_2 div
+{
+	animation-direction: alternate-reverse;
+}
+
+.dogstick_legs
+{
+	position: absolute;
+	width: 20px;
+	height: 200px;
+	left: -100px;
+	right:0;
+	margin:auto;
+    top: 170px;
+	transform-origin: top center;
+    transform: rotate(40deg);
+}
+.dogstick_legs div
+{
+	position: absolute;
+	left:0;
+	transform-origin: top center;
+	border-radius: 10px;
+}
+.dogleg1, .leg2
+{
+	height: 85px;
+	width: 100%;
+}
+.leg3
+{
+	width: 40px;
+	height: 20px;
+}
+
+.tail {
+	animation-name: dogtale_rotate;
+}
+
+.dogleg1
+{
+	transform: rotate(-40deg);
+	animation-name: dogleg1_rotate;
+}
+.leg2
+{
+	transform: rotate(-145deg);
+	top: 90px;
+	animation-name: leg2_rotate;
+}
+.leg3
+{
+	transform: rotate(15deg);
+	top: 90px;
+	animation-name: leg3_rotate;
+}
+@keyframes doghand1_rotate
+{
+	0%
+	{
+		transform: rotate(-40deg);
+	}
+	100%
+	{
+		transform: rotate(40deg);
+	}
+}
+@keyframes dogleg2_rotate
+{
+	0%
+	{
+		transform: rotate(-145deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+
+@keyframes ears_rotate
+{
+	0%
+	{
+		transform: rotate(13deg);
+	}
+	100%
+	{
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes head_rotate
+{
+	0%
+	{
+		transform: rotate(13deg);
+	}
+	100%
+	{
+		transform: rotate(17deg);
+	}
+}
+
+@keyframes dogtale_rotate
+{
+	0%
+	{
+		transform: rotate(-25deg);
+	}
+	50%
+	{
+		transform: rotate(-35deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+
+@keyframes dogleg1_rotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(-60deg);
+	}
+}
+@keyframes leg2_rotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(60deg);
+	}
+}
+@keyframes leg3_rotate
+{
+	0%
+	{
+		transform: rotate(-30deg);
+	}
+	100%
+	{
+		transform: rotate(65deg);
+	}
+}
+
+.ears, .ears2 {
+	animation-duration: 0.09s;
+}
+
+.tail {
+	animation-duration: 0.01s;
+}
+
+.doghand1, .dogleg2, .dogstick_head, .dogleg1, .leg2, .leg3
+{
+	animation-duration: 0.7s;
+}
+
+.dog
+{
+    transform: scale(1);
+}
+.dogstick_head
+{
+    background-color: #7d796d;
+}
+.dogstick_body
+{
+	background-color: #7d796d;
+}
+.dogstick_hands.part_1 *
+{
+    background-color: black;
+}
+.dogstick_hands.part_2 *
+{
+    background-color: black;
+}
+.dogleg1, .tail
+{
+	background-color: black;
+}
+
+
+.tail {
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    left: 0;
+    right: 165px;
+    margin: auto;
+    transform: rotate(85deg);
+    border-radius: 10px;
+    top: 130px;
+}
+
+.ears {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid black;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    z-index: -1;
+}
+
+.ears2 {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid black;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 160px;
+    top: 110px;
+    z-index: -1;
+}
+
+.ears2-inner {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #decc81;
+    position: relative;
+    left: -15px;
+    top: 10px;
+    z-index: -1;
+}
+
+.ears-inner {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #decc81;
+    position: relative;
+    left: -15px;
+    top: 10px;
+    z-index: -1;
+}
+</style>
+
+
+
+</head>
+<body>
+	<div class="dogstick_holder">
+		<div class="dog">
+			<div class="tail"></div>
+			<div class="dogstick_hands part_1">
+					<div class="dogleg2"></div>
+			</div>
+			<div class="dogstick_legs part_1">
+				<div class="dogleg1">
+				</div>
+			</div>
+			<div class="dogstick_body"></div>
+			<div class="dogstick_legs part_2">
+				<div class="dogleg1">
+				</div>
+			</div>
+			<div class="dogstick_hands part_2">
+					<div class="dogleg2"></div>
+			</div>
+			<div class="dogstick_head">
+			</div>
+			<div class="ears">
+				<div class="ears-inner"></div>
+			</div>
+			<div class="ears2">
+				<div class="ears2-inner"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
