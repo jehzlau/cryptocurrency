@@ -44,7 +44,7 @@ clear: both;
 <h3>A really simple web app that displays crypto currencies that matter. <a href="https://www.cryptocurrency.ph/btc/">View exchange rates in BTC</a>. If you are bored while staring at the table, watch the <a href="https://www.cryptocurrency.ph/run/">live race here</a>.</h3>
 
 <?php
-$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=IOT,NEO,DGB,STRAT,BAT,XEM,XLM,XRP,BTC,ETH,LTC,DASH,XMR,ZEC,DOGE,ETC&tsyms=PHP';
+$api_url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=IOT,BTC,ADA,ARK,NEO,GAS,DGB,XEM,XLM,XRP,ETH,LTC,DASH,XMR,ZEC,DOGE&tsyms=PHP';
 $cryptocurrency = file_get_contents($api_url);
 $json=json_decode($cryptocurrency,true);
  
